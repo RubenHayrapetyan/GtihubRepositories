@@ -1,4 +1,4 @@
-package com.test.githubrepositories.screen.repositories
+package com.test.presentation.screen.repositories
 
 import com.test.entity.ui.GithubRepositoriesItemUiModel
 

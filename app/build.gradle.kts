@@ -47,7 +47,7 @@ dependencies {
   implementation(project(":domain"))
   implementation(project(":entity"))
 
-  implementation (libs.jsoup)
+  implementation (libs.jsoup) // TODO
   implementation (libs.androidx.navigation.compose)
   implementation (libs.retrofit)
   implementation (libs.retrofit2.converter.moshi)
@@ -70,6 +70,6 @@ dependencies {
   androidTestImplementation(libs.androidx.espresso.core)
   androidTestImplementation(platform(libs.androidx.compose.bom))
   androidTestImplementation(libs.androidx.ui.test.junit4)
-  debugImplementation(libs.androidx.ui.tooling)
+  debugImplementation(libs.androidx.ui.tooling) // TODO
   debugImplementation(libs.androidx.ui.test.manifest)
 }

@@ -1,4 +1,4 @@
-package com.test.githubrepositories.screen.repositories.component
+package com.test.presentation.screen.repositories.components
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.lazy.LazyColumn
@@ -14,7 +14,10 @@ internal fun Repositories(repositories: List<GithubRepositoriesItemUiModel>) {
     modifier = Modifier.fillMaxSize(),
     horizontalAlignment = Alignment.CenterHorizontally
   ) {
-    items(repositories.size) { index ->
+    items(
+      count = repositories.size,
+      key = { index -> repositories[index].id }
+    ) { index ->
       RepositoriesItem(repositoryItem = repositories[index])
     }
   }

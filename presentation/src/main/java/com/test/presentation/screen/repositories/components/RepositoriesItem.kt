@@ -1,4 +1,4 @@
-package com.test.githubrepositories.screen.repositories.component
+package com.test.presentation.screen.repositories.components
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -20,7 +20,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import com.test.entity.ui.GithubRepositoriesItemUiModel
-import com.test.githubrepositories.R
+import com.test.presentation.R
 
 @Composable
 internal fun RepositoriesItem(

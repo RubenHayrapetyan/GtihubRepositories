@@ -1,4 +1,4 @@
-package com.test.githubrepositories.ui.theme
+package com.test.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build

@@ -1,4 +1,4 @@
-package com.test.githubrepositories.screen.repositories
+package com.test.presentation.screen.repositories
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

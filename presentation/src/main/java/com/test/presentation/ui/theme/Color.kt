@@ -1,4 +1,4 @@
-package com.test.githubrepositories.ui.theme
+package com.test.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

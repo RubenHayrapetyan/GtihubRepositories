@@ -1,4 +1,4 @@
-package com.test.githubrepositories.screen.repositories
+package com.test.presentation.screen.repositories
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -16,8 +16,8 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.test.githubrepositories.R
-import com.test.githubrepositories.screen.repositories.component.Repositories
+import com.test.presentation.R
+import com.test.presentation.screen.repositories.components.Repositories
 
 @Composable
 fun RepositoriesScreen(
