@@ -14,7 +14,7 @@ import com.test.presentation.R
 @Composable
 internal fun ErrorMessage(modifier: Modifier = Modifier, errorMessage: String, retryClick: () -> Unit) {
   Column(
-    modifier = Modifier.fillMaxWidth(),
+    modifier = modifier,
     horizontalAlignment = Alignment.CenterHorizontally
   ) {
     Text(
