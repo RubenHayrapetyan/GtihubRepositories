@@ -37,12 +37,7 @@ dependencies {
 
   implementation(libs.hilt.android)
   ksp(libs.hilt.compiler)
-  implementation (libs.retrofit2.converter.moshi) // TODO may be we don;t need this
   implementation (libs.retrofit)
-  implementation (libs.logging.interceptor)
-  implementation(libs.androidx.core.ktx)
-  implementation(libs.androidx.appcompat)
-  implementation(libs.material)
   testImplementation(libs.junit)
   androidTestImplementation(libs.androidx.junit)
   androidTestImplementation(libs.androidx.espresso.core)
