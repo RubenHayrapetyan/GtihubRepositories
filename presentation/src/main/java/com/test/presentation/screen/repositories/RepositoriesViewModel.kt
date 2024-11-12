@@ -29,7 +29,10 @@ class RepositoriesViewModel @Inject constructor(
 
   private fun getRepositories() {
     viewModelScope.launch {
-      productsState = productsState.copy(isLoading = true)
+      productsState = productsState.copy(
+        isLoading = true,
+        errorMessage = ""
+      )
 
       productsState = when (val result = getRepositoriesUseCase()) {
         is ActionResult.Success -> {

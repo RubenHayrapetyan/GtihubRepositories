@@ -1,5 +1,5 @@
 <resources>
-  <string name="title_activity_main2">MainActivity2</string>
+  <string name="app_name">GithubRepositories</string>
 
   <string name="name_format">Name: %1$s</string>
   <string name="description_format">Description: %1$s</string>
