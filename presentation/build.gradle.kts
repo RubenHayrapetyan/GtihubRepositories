@@ -36,8 +36,8 @@ android {
 }
 
 dependencies {
+  implementation(project(":core"))
   implementation(project(":domain"))
-  implementation(project(":entity"))
 
   implementation(libs.androidx.lifecycle.runtime.ktx.v270)
   implementation (libs.androidx.lifecycle.viewmodel.ktx)

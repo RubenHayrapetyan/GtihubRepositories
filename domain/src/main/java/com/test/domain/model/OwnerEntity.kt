@@ -1,4 +1,4 @@
-package com.test.entity.domain
+package com.test.domain.model
 
 data class OwnerEntity(
   val avatarUrl: String

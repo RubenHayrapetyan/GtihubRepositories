@@ -1,4 +1,4 @@
-package com.test.entity.util
+package com.test.core.util
 
 sealed class ActionResult<out T> {
   data class Success<out T>(val data: T) : ActionResult<T>()

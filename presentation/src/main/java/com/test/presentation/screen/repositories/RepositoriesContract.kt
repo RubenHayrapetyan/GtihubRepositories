@@ -1,6 +1,6 @@
 package com.test.presentation.screen.repositories
 
-import com.test.entity.ui.GithubRepositoriesItemUiModel
+import com.test.presentation.model.GithubRepositoriesItemUiModel
 
 class RepositoriesContract {
   data class RepositoriesState(

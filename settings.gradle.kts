@@ -23,5 +23,5 @@ rootProject.name = "GithubRepositories"
 include(":app")
 include(":data")
 include(":domain")
-include(":entity")
 include(":presentation")
+include(":core")

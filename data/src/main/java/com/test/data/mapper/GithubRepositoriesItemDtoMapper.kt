@@ -1,8 +1,8 @@
-package com.test.data.model.mapper
+package com.test.data.mapper
 
-import com.test.entity.dto.GithubRepositoriesItemDto
-import com.test.entity.domain.GithubRepositoriesItemEntity
-import com.test.entity.domain.OwnerEntity
+import com.test.data.model.GithubRepositoriesItemDto
+import com.test.domain.model.GithubRepositoriesItemEntity
+import com.test.domain.model.OwnerEntity
 
 fun GithubRepositoriesItemDto.toEntity() = GithubRepositoriesItemEntity(
     id = this.id ?: -1,

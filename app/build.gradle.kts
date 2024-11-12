@@ -41,7 +41,6 @@ dependencies {
   implementation(project(":presentation"))
   implementation(project(":data"))
   implementation(project(":domain"))
-  implementation(project(":entity"))
 
   implementation (libs.retrofit)
   implementation (libs.retrofit2.converter.moshi)

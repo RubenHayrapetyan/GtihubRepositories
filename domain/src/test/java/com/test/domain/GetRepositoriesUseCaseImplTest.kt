@@ -1,10 +1,9 @@
 package com.test.domain
 
-import com.test.domain.mapper.toUiModel
+import com.test.core.util.ActionResult
+import com.test.domain.model.GithubRepositoriesItemEntity
 import com.test.domain.repository.GithubRepositoriesRepository
 import com.test.domain.usecase.GetRepositoriesUseCaseImpl
-import com.test.entity.domain.GithubRepositoriesItemEntity
-import com.test.entity.util.ActionResult
 import io.mockk.coEvery
 import io.mockk.mockk
 import kotlinx.coroutines.test.runTest
@@ -17,13 +16,12 @@ class GetRepositoriesUseCaseImplTest {
   @Test
   fun `should return success when repository returns success`() = runTest {
     val expectedData = listOf<GithubRepositoriesItemEntity>()
-    coEvery { githubRepositoriesRepository.getRepositories() } returns ActionResult.Success(
-      expectedData
-    )
+    coEvery { githubRepositoriesRepository.getRepositories() } returns
+        ActionResult.Success(expectedData)
 
     when (val result = useCase()) {
       is ActionResult.Success -> {
-        assert(result.data == expectedData.map { it.toUiModel() })
+        assert(result.data == expectedData)
       }
 
       is ActionResult.Error -> assert(false) { "Expected success but got error" }
@@ -33,9 +31,8 @@ class GetRepositoriesUseCaseImplTest {
   @Test
   fun `should return error when repository returns error`() = runTest {
     val expectedException = Exception("Test exception")
-    coEvery { githubRepositoriesRepository.getRepositories() } returns ActionResult.Error(
-      expectedException
-    )
+    coEvery { githubRepositoriesRepository.getRepositories() } returns
+        ActionResult.Error(expectedException)
 
     when (val result = useCase()) {
       is ActionResult.Success -> assert(false) { "Expected error but got success" }

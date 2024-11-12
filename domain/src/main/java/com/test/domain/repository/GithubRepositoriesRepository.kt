@@ -1,7 +1,7 @@
 package com.test.domain.repository
 
-import com.test.entity.domain.GithubRepositoriesItemEntity
-import com.test.entity.util.ActionResult
+import com.test.core.util.ActionResult
+import com.test.domain.model.GithubRepositoriesItemEntity
 
 interface GithubRepositoriesRepository {
 

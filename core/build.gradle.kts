@@ -1,12 +1,10 @@
 plugins {
   alias(libs.plugins.android.library)
   alias(libs.plugins.jetbrains.kotlin.android)
-  alias(libs.plugins.hilt.android)
-  alias(libs.plugins.ksp)
 }
 
 android {
-  namespace = "com.test.data"
+  namespace = "com.test.core"
   compileSdk = 35
 
   defaultConfig {
@@ -32,12 +30,10 @@ android {
 }
 
 dependencies {
-  implementation(project(":domain"))
-  implementation(project(":core"))
-
-  implementation(libs.hilt.android)
-  implementation (libs.retrofit2.converter.moshi)
-  ksp(libs.hilt.compiler)
-  implementation (libs.retrofit)
+  implementation(libs.androidx.core.ktx)
+  implementation(libs.androidx.appcompat)
+  implementation(libs.material)
   testImplementation(libs.junit)
+  androidTestImplementation(libs.androidx.junit)
+  androidTestImplementation(libs.androidx.espresso.core)
 }

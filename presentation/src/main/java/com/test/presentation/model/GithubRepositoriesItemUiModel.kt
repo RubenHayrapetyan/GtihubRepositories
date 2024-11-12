@@ -1,4 +1,4 @@
-package com.test.entity.ui
+package com.test.presentation.model
 
 data class GithubRepositoriesItemUiModel(
   val id: Long = -1,

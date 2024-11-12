@@ -1,9 +1,9 @@
 package com.test.domain.usecase
 
-import com.test.entity.ui.GithubRepositoriesItemUiModel
-import com.test.entity.util.ActionResult
+import com.test.core.util.ActionResult
+import com.test.domain.model.GithubRepositoriesItemEntity
 
 interface GetRepositoriesUseCase {
 
-  suspend operator fun invoke(): ActionResult<List<GithubRepositoriesItemUiModel>>
+  suspend operator fun invoke(): ActionResult<List<GithubRepositoriesItemEntity>>
 }

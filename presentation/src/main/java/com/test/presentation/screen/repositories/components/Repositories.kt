@@ -6,7 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.test.entity.ui.GithubRepositoriesItemUiModel
+import com.test.presentation.model.GithubRepositoriesItemUiModel
 
 @Composable
 internal fun Repositories(repositories: List<GithubRepositoriesItemUiModel>) {

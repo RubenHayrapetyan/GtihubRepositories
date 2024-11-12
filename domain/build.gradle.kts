@@ -32,7 +32,7 @@ android {
 }
 
 dependencies {
-  implementation(project(":entity"))
+  implementation(project(":core"))
 
   implementation(libs.hilt.android)
   ksp(libs.hilt.compiler)

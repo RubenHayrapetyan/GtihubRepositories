@@ -6,7 +6,8 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.test.domain.usecase.GetRepositoriesUseCase
-import com.test.entity.util.ActionResult
+import com.test.core.util.ActionResult
+import com.test.presentation.mapper.toUiModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -36,8 +37,9 @@ class RepositoriesViewModel @Inject constructor(
 
       productsState = when (val result = getRepositoriesUseCase()) {
         is ActionResult.Success -> {
+          val githubRepositories = result.data.map { it.toUiModel() }
           productsState.copy(
-            repositories = result.data,
+            repositories = githubRepositories,
             errorMessage = "",
             isLoading = false,
           )
