@@ -1,7 +1,7 @@
-package com.test.githubrepositories.di
+package com.test.data.di
 
 import com.test.data.remote.GithubRepositoriesService
-import com.test.githubrepositories.util.AppConstants
+import com.test.data.util.DataConstants
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -30,7 +30,7 @@ object RemoteModule {
   fun provideRetrofit(
     okHttpClient: OkHttpClient,
   ): Retrofit = Retrofit.Builder().apply {
-    baseUrl(AppConstants.BASE_URL)
+    baseUrl(DataConstants.BASE_URL)
     addConverterFactory(MoshiConverterFactory.create())
     client(okHttpClient)
   }.build()

@@ -42,8 +42,6 @@ dependencies {
   implementation(project(":data"))
   implementation(project(":domain"))
 
-  implementation (libs.retrofit)
-  implementation (libs.retrofit2.converter.moshi)
   implementation(libs.hilt.android)
   ksp(libs.hilt.compiler)
 }

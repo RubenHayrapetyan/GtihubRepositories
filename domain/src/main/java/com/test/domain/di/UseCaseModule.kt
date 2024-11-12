@@ -1,4 +1,4 @@
-package com.test.githubrepositories.di
+package com.test.domain.di
 
 import com.test.domain.usecase.GetRepositoriesUseCase
 import com.test.domain.usecase.GetRepositoriesUseCaseImpl
