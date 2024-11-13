@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
           RepositoriesScreen(
             modifier = Modifier.padding(innerPadding),
             state = viewModel.productsState,
-            onEvent = viewModel::onProductsEvent
+            onEvent = viewModel::onGithubRepositoriesEvent
           )
         }
       }

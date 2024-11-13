@@ -20,7 +20,7 @@ class RepositoriesViewModel @Inject constructor(
   var productsState by mutableStateOf(RepositoriesContract.RepositoriesState())
     private set
 
-  fun onProductsEvent(event: RepositoriesContract.RepositoriesEvent) {
+  fun onGithubRepositoriesEvent(event: RepositoriesContract.RepositoriesEvent) {
     when (event) {
       is RepositoriesContract.RepositoriesEvent.GetRepositories -> {
         getRepositories()
